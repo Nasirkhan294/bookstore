@@ -2,8 +2,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
   margin-left: 4rem;
+}
+
+h2 {
+  margin: 1rem 0 0 5.2rem;
+  text-transform: capitalize;
 }
 
 .title,
@@ -11,7 +16,7 @@
   padding: 1rem;
   border-radius: 0.5rem;
   margin-left: 1rem;
-  border: 1px solid #f4f5f9;
+  border: 1px solid #adaeb1;
   width: 20%;
   text-transform: capitalize;
 }
