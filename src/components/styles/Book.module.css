@@ -1,18 +1,17 @@
 .book {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
 }
 
-
 .content {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex: 1;
-	background-color: #fff;
-	margin: 0 5rem;
-	padding: 3rem;
-	border: 1px solid #F4F5F9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  background-color: #fff;
+  margin: 0 5rem;
+  padding: 3rem;
+  border: 1px solid #f4f5f9;
 }
