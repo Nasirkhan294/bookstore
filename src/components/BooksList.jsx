@@ -1,4 +1,5 @@
 import Book from './Book';
+import AddBook from './AddBook';
 
 const BooksList = () => {
   const books = [
@@ -20,11 +21,14 @@ const BooksList = () => {
   ];
 
   return (
-    <ul>
-      {books.map((book) => (
-        <Book key={book.id} title={book.title} author={book.author} />
-      ))}
-    </ul>
+    <>
+      <ul>
+        {books.map((book) => (
+          <Book key={book.id} title={book.title} author={book.author} />
+        ))}
+      </ul>
+      <AddBook />
+    </>
   );
 };
 

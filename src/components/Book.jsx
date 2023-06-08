@@ -7,7 +7,7 @@ const Book = ({ title, author }) => (
       <div className={styles.content}>
         <p>{title}</p>
         <p>{author}</p>
-        <button type="button">Remove</button>
+        <button type="button" className={styles.btn}>Remove</button>
       </div>
     </div>
   </>
