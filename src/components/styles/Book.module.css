@@ -16,17 +16,16 @@
   border: 1px solid #f4f5f9;
 }
 
-
 .btn {
-	margin-left: 1rem;
-	padding: 1rem 1.5rem;
-	border-radius: 0.5rem;
-	border: none;
-	outline: none;
-	background-color: #0290ff;
-	color: #fff;
+  margin-left: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #0290ff;
+  color: #fff;
 }
 
 .btn:hover {
-	background-color: #03497e;
+  background-color: #03497e;
 }

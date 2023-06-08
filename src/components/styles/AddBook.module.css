@@ -1,31 +1,31 @@
 .newBook {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	height: 20vh;
-	margin-left: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20vh;
+  margin-left: 4rem;
 }
 
-.title, .author {
-	padding: 1rem;
-	border: none;
-	border-radius: 0.5rem;
-	margin-left: 1rem;
-	border: 1px solid #f4f5f9;
-	width: 20%;
-	text-transform: capitalize;
+.title,
+.author {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  border: 1px solid #f4f5f9;
+  width: 20%;
+  text-transform: capitalize;
 }
 
 .btn {
-	margin-left: 1rem;
-	padding: 1rem 1.5rem;
-	border-radius: 0.5rem;
-	border: none;
-	outline: none;
-	background-color: #0290ff;
-	color: #fff;
+  margin-left: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #0290ff;
+  color: #fff;
 }
 
 .btn:hover {
-	background-color: #03497e;
+  background-color: #03497e;
 }
