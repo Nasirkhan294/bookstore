@@ -34,8 +34,9 @@
 ## 🛠 Built With <a name="built-with"></a>
 
   <ul>
-    <li>React</li>
     <li>CSS</li>
+    <li>React</li>
+    <li>Redux</li>
   </ul>
 
 <!-- Features -->
