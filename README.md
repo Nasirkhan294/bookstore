@@ -34,8 +34,9 @@
 ## 🛠 Built With <a name="built-with"></a>
 
   <ul>
-    <li>React</li>
     <li>CSS</li>
+    <li>React</li>
+    <li>Redux</li>
   </ul>
 
 <!-- Features -->
@@ -117,7 +118,7 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Coming Up Soon**
+- [ ] **Styling**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
