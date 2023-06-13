@@ -12,7 +12,8 @@ h2 {
 }
 
 .title,
-.author {
+.author,
+.category {
   padding: 1rem;
   border-radius: 0.5rem;
   margin-left: 1rem;
