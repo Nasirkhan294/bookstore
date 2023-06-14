@@ -1,23 +1,30 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { nanoid } from '@reduxjs/toolkit';
 import { useState } from 'react';
 import styles from './styles/AddBook.module.css';
-import { addBook } from '../redux/books/booksSlice';
+import { addBook, addNewBook } from '../redux/books/booksSlice';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
-  const dispatch = useDispatch();
 
-  const handleAddBook = () => {
-    const newBook = {
-      itemId: Date.now(),
+  const dispatch = useDispatch();
+  const { isLoading, error } = useSelector((state) => state.books);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(addBook({
+      item_id: nanoid,
       title,
       author,
       category,
-    };
-
-    dispatch(addBook(newBook));
+    })).then(() => dispatch(addNewBook({
+      item_id: nanoid,
+      title,
+      author,
+      category,
+    })));
 
     setTitle('');
     setAuthor('');
@@ -27,13 +34,21 @@ const AddBook = () => {
   return (
     <>
       <h2>Add new book</h2>
-      <form className={styles.newBook}>
+      {isLoading && <p>Loading...</p>}
+      {error && (
+        <p>
+          Error:
+          {error}
+        </p>
+      )}
+      <form className={styles.newBook} onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="title"
           className={styles.title}
           onChange={(e) => setTitle(e.target.value)}
           value={title}
+          required
         />
         <input
           type="text"
@@ -41,18 +56,24 @@ const AddBook = () => {
           className={styles.author}
           onChange={(e) => setAuthor(e.target.value)}
           value={author}
+          required
         />
-        <input
-          type="text"
-          placeholder="category"
+        <select
           className={styles.category}
-          onChange={(e) => setCategory(e.target.value)}
+          name="category"
           value={category}
-        />
+          placeholder="Category"
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="None">None</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Science-Fiction">Science Fiction</option>
+        </select>
         <button
-          type="button"
+          type="submit"
           className={styles.btn}
-          onClick={handleAddBook}
         >
           Add Book
         </button>

@@ -1,19 +1,12 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
 import styles from './styles/Book.module.css';
-import { removeBook } from '../redux/books/booksSlice';
 
 const Book = ({
-  itemId,
   title,
   author,
   category,
 }) => {
-  const dispatch = useDispatch();
-
-  const handleRemoveBook = () => {
-    dispatch(removeBook(itemId));
-  };
+  const handleRemoveBook = () => {};
 
   return (
     <div className={styles.book}>
@@ -34,7 +27,6 @@ const Book = ({
 };
 
 Book.propTypes = {
-  itemId: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
