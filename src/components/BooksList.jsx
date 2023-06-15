@@ -30,7 +30,8 @@ const BooksList = () => {
       <ul>
         {books.map((book) => (
           <Book
-            key={book.item_id}
+            key={book.itemId}
+            itemId={book.itemId}
             title={book.title}
             author={book.author}
             category={book.category}

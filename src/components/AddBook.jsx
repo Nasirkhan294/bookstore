@@ -15,12 +15,12 @@ const AddBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addBook({
-      item_id: nanoid,
+      item_id: nanoid(),
       title,
       author,
       category,
     })).then(() => dispatch(addNewBook({
-      item_id: nanoid,
+      item_id: nanoid(),
       title,
       author,
       category,
@@ -65,7 +65,6 @@ const AddBook = () => {
           placeholder="Category"
           onChange={(e) => setCategory(e.target.value)}
         >
-          <option value="None">None</option>
           <option value="Fiction">Fiction</option>
           <option value="Non-Fiction">Non-Fiction</option>
           <option value="Mystery">Mystery</option>
