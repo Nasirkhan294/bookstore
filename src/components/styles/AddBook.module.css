@@ -39,11 +39,12 @@ h2 {
 .btn {
   margin-left: 1rem;
   padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   border: none;
   outline: none;
   background-color: #0290ff;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn:hover {

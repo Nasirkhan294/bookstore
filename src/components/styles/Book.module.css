@@ -1,29 +1,139 @@
 .book {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 2rem;
+  margin: 0 5rem;
+}
+
+.bookContent {
+  font-family: 'Roboto Slab', serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
 }
 
-.content {
+.bookInfo {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+.category {
+  color: #888887;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.6rem 0;
+  color: #121212;
+}
+
+.author {
+  color: #a0c2de;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 2rem 0 0 0;
+}
+
+.button {
+  border: none;
+  outline: none;
   background-color: #fff;
-  margin: 0 5rem;
-  padding: 3rem;
-  border: 1px solid #f4f5f9;
+  font-size: 1rem;
+  color: #a0c2de;
+}
+
+.button:hover {
+  color: #0290ff;
+}
+
+.button:nth-of-type(2) {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  border-left: 1px solid #a0c2de;
+  border-right: 1px solid #a0c2de;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+}
+
+.circularProgressContainer {
+  width: 5.5rem;
+  height: 5.5rem;
+  padding: 0.63rem 0.625rem 0.75rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circularProgress {
+  border: 5px solid #307bbe;
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-left-color: #e8e8e8;
+  transform: rotate(35deg);
+}
+
+.progressStat {
+  margin: 0 1rem;
+}
+
+.percentage {
+  font-size: 2.3rem;
+}
+
+.completed {
+  font-size: 1rem;
+  color: #afafad;
+}
+
+.divider {
+  width: 0.25rem;
+  height: 5.5rem;
+  background-color: #e8e8e8;
+  margin: 0 3rem;
+}
+
+.chappterContainer {
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  gap: 1.5rem;
+}
+
+.chapterLabel {
+  color: #afafad;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.chapter {
+  color: #717170;
+  letter-spacing: 1px;
 }
 
 .btn {
-  margin-left: 1rem;
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
+  font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+  padding: 0.5rem 1.75rem;
+  border-radius: 0.25rem;
   border: none;
   outline: none;
   background-color: #0290ff;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn:hover {

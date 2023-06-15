@@ -16,17 +16,52 @@ const Book = ({
 
   return (
     <div className={styles.book}>
-      <div className={styles.content}>
-        <p>{title}</p>
-        <p>{author}</p>
-        <p>{category}</p>
-        <button
-          type="button"
-          className={styles.btn}
-          onClick={handleRemoveBook}
-        >
-          Remove
-        </button>
+      <div className={styles.bookContent}>
+        <div className={styles.bookInfo}>
+          <p className={styles.category}>{category}</p>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.author}>{author}</p>
+          <div className={styles.buttons}>
+            <button
+              type="button"
+              className={styles.button}
+            >
+              Comment
+            </button>
+            <button
+              type="button"
+              className={styles.button}
+              onClick={handleRemoveBook}
+            >
+              Remove
+            </button>
+            <button
+              type="button"
+              className={styles.button}
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+        <div className={styles.progressContainer}>
+          <div className={styles.circularProgressContainer}>
+            <div className={styles.circularProgress} />
+          </div>
+          <div className={styles.progressStat}>
+            <p className={styles.percentage}>64%</p>
+            <p className={styles.completed}>Completed</p>
+          </div>
+          <div className={styles.divider} />
+          <div className={styles.chappterContainer}>
+            <div>
+              <p className={styles.chapterLabel}>Current Chapter</p>
+              <p className={styles.chapter}>Chapter 17</p>
+            </div>
+            <div>
+              <button type="button" className={styles.btn}>Update Progress</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

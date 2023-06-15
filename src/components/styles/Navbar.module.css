@@ -3,6 +3,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
+  padding: 2rem 0;
 }
 
 .user {
@@ -50,4 +51,8 @@ h1 {
   font-size: 0.8rem;
   color: #4e4e4e;
   text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #0290ff;
 }

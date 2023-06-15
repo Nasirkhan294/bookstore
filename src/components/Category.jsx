@@ -1,11 +1,5 @@
 const Category = () => (
-  <h1 style={{
-    display: 'flex',
-    marginLeft: '5rem',
-    alignItems: 'center',
-    height: '20vh',
-  }}
-  >
+  <h1 className="category">
     Under Construction
   </h1>
 );

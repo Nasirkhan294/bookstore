@@ -69,6 +69,7 @@ const AddBook = () => {
             onChange={(e) => setCategory(e.target.value)}
           >
             <option value="Fiction">Fiction</option>
+            <option value="Mystery">Mystery</option>
             <option value="Non-Fiction">Non-Fiction</option>
             <option value="Science-Fiction">Science</option>
           </select>
