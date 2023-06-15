@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import styles from './styles/Book.module.css';
 import { removeBook } from '../redux/books/booksSlice';
 
@@ -10,7 +10,6 @@ const Book = ({
   category,
 }) => {
   const dispatch = useDispatch();
-
   const handleRemoveBook = () => {
     dispatch(removeBook(itemId));
   };
