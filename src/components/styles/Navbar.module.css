@@ -1,13 +1,38 @@
-.navbar {
+header {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  padding: 2rem 0 2rem 8rem;
   background-color: #fff;
 }
 
-h1 {
-  font-size: 2.5rem;
+.user {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.2rem;
   color: #0290ff;
+}
+
+.navbar {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  padding: 0 0 0 4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0290ff;
+  letter-spacing: 2px;
 }
 
 .navbar ul {
@@ -16,11 +41,13 @@ h1 {
   align-items: center;
   list-style: none;
   width: 20%;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .navbar ul li a {
-  color: #0290ff;
+  font-size: 0.8rem;
+  color: #4e4e4e;
   text-decoration: none;
 }

@@ -15,4 +15,18 @@ body {
 .App {
   margin: 3rem;
   background-color: #fafafa;
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  margin: 3rem auto;
+}
+
+.horizontal-divider {
+  margin: 3rem 5rem;
+  height: 0.15rem;
+  background-color: #e8e8e8;
+  flex: 1;
 }
