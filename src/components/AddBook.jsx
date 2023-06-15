@@ -42,40 +42,44 @@ const AddBook = () => {
         </p>
       )}
       <form className={styles.newBook} onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="title"
-          className={styles.title}
-          onChange={(e) => setTitle(e.target.value)}
-          value={title}
-          required
-        />
-        <input
-          type="text"
-          placeholder="author"
-          className={styles.author}
-          onChange={(e) => setAuthor(e.target.value)}
-          value={author}
-          required
-        />
-        <select
-          className={styles.category}
-          name="category"
-          value={category}
-          placeholder="Category"
-          onChange={(e) => setCategory(e.target.value)}
-        >
-          <option value="Fiction">Fiction</option>
-          <option value="Non-Fiction">Non-Fiction</option>
-          <option value="Mystery">Mystery</option>
-          <option value="Science-Fiction">Science Fiction</option>
-        </select>
-        <button
-          type="submit"
-          className={styles.btn}
-        >
-          Add Book
-        </button>
+        <div className={styles.left}>
+          <input
+            type="text"
+            placeholder="title"
+            className={styles.title}
+            onChange={(e) => setTitle(e.target.value)}
+            value={title}
+            required
+          />
+          <input
+            type="text"
+            placeholder="author"
+            className={styles.author}
+            onChange={(e) => setAuthor(e.target.value)}
+            value={author}
+            required
+          />
+        </div>
+        <div className={styles.right}>
+          <select
+            className={styles.category}
+            name="category"
+            value={category}
+            placeholder="Category"
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <option value="Fiction">Fiction</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Science-Fiction">Science</option>
+          </select>
+          <button
+            type="submit"
+            className={styles.btn}
+          >
+            Add Book
+          </button>
+        </div>
       </form>
     </>
   );

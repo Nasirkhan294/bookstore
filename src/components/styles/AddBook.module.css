@@ -1,9 +1,22 @@
 .newBook {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 10vh;
-  margin-left: 4rem;
+  margin: 0 3rem;
+}
+
+.left,
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  justify-content: flex-end;
+  margin-right: 2.5rem;
 }
 
 h2 {
@@ -15,21 +28,23 @@ h2 {
 .author,
 .category {
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 4px;
   margin-left: 1rem;
-  border: 1px solid #adaeb1;
-  width: 20%;
+  border: 1px solid #e8e8e8;
+  width: 45%;
   text-transform: capitalize;
+  color: #807e7e;
 }
 
 .btn {
   margin-left: 1rem;
   padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   border: none;
   outline: none;
   background-color: #0290ff;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn:hover {

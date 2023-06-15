@@ -27,17 +27,19 @@ const BooksList = () => {
 
   return (
     <>
-      <ul>
+      <ul className="books">
         {books.map((book) => (
-          <Book
-            key={book.itemId}
-            itemId={book.itemId}
-            title={book.title}
-            author={book.author}
-            category={book.category}
-          />
+          <li key={book.itemId}>
+            <Book
+              itemId={book.itemId}
+              title={book.title}
+              author={book.author}
+              category={book.category}
+            />
+          </li>
         ))}
       </ul>
+      <div className="horizontal-divider" />
       <AddBook />
     </>
   );

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,4 +15,31 @@ body {
 .App {
   margin: 3rem;
   background-color: #fafafa;
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+.books {
+  margin: 3rem auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.horizontal-divider {
+  margin: 3rem 5rem;
+  height: 0.15rem;
+  background-color: #e8e8e8;
+  flex: 1;
+}
+
+.category {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  height: 20vh;
+  color: #202200;
 }

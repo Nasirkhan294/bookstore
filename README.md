@@ -29,7 +29,7 @@
 
 # 📖 Bookstore <a name="about-project"></a>
 
-**Awesome Books Website:** The repository contains the source code for the "Bookstore" a user-friendly application designed to allow users to efficiently manage their favorite books by adding and removing them as desired.
+**Awesome Books Website:** The Bookstore is a web application developed utilizing the React framework and Redux for efficient state management. It emulates a user-friendly and intuitive online bookstore platform, enabling users to seamlessly add and retrieve books through an API integration.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,8 +44,8 @@
 ### Key Features <a name="key-features"></a>
 
 - [x] **Single Page App**
-- [x] **Project Setup**
-- [x] **Medium Fidelity Design**
+- [x] **Add & Remove Functionalities**
+- [x] **High Fidelity Design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +118,7 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Styling**
+- [ ] **Edit Functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
